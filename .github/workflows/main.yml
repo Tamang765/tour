@@ -2,15 +2,20 @@ name: Build and Deploy React App via FTP
 
 on:
   push:
-    branches: [master]  # Update if you're using 'master' or any other branch
+    branches: [main]  # Adjust if needed
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Display Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
 
       - name: Run React build script
         run: |
