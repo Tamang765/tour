@@ -2,7 +2,7 @@ name: Build and Deploy React App via FTP
 
 on:
   push:
-    branches: [main]  # Update if you're using 'master' or any other branch
+    branches: [master]  # Update if you're using 'master' or any other branch
 
 jobs:
   build-and-deploy:
