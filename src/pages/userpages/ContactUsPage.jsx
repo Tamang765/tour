@@ -11,7 +11,7 @@ const ContactUsPage = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50"></div>
-          <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 px-4">
+          <div className="container mx-auto max-w-7xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 px-4">
             <div className=" text-white p-6 rounded-lg w-full">
               <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
               <p className="text-sm w-[20vw]">
@@ -52,7 +52,7 @@ const ContactUsPage = () => {
       </div>
 
       <div className="bg-white">
-        <div className="container mx-auto max-w-6xl py-12 px-6">
+        <div className="container mx-auto max-w-7xl py-12 px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-2xl font-bold mb-6">8K Expeditions</h2>

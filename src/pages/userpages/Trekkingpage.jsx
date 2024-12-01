@@ -65,7 +65,7 @@ const TrekkingPage = () => {
           Langtang Trek, and many more.
         </p>
       </div>
-      <div className="container max-w-6xl my-8 mx-auto px-4">
+      <div className="container max-w-7xl my-8 mx-auto px-4">
         <h2 className="text-center text-2xl font-bold text-gray-800 mb-8">
           Trekking Regions
         </h2>

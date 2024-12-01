@@ -48,7 +48,7 @@ const ActivitiesPage = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 px-4">
+        <div className="container mx-auto max-w-7xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 px-4">
           <div className=" text-white p-6 rounded-lg w-full">
             <h1 className="text-4xl md:text-5xl font-bold mb-2">
               Other Activities
@@ -61,7 +61,7 @@ const ActivitiesPage = () => {
       </div>
 
       <div className="bg-white">
-        <div className=" container mx-auto max-w-6xl py-10 px-6 lg:px-20 bg-white">
+        <div className=" container mx-auto max-w-7xl py-10 px-6 lg:px-20 bg-white">
           <p className="text-gray-700 text-lg leading-relaxed">
             As an Adventure Enthusiast, you may want to explore many other
             activities that 8K Expeditions offers. Be it a city tour, cultural
@@ -70,7 +70,7 @@ const ActivitiesPage = () => {
           </p>
         </div>
 
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {activities.map((activity, index) => (
               <ActivityCard key={index} {...activity} />

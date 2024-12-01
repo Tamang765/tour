@@ -1,6 +1,6 @@
 import React from "react";
-import ceo from '../../assets/img/photo/meroway.jpeg'
-import ngodu from '../../assets/img/photo/ceo.jpeg'
+import ngodu from "../../assets/img/photo/ceo.jpeg";
+import ceo from "../../assets/img/photo/meroway.jpeg";
 
 const TeamPage = () => {
   return (
@@ -51,7 +51,7 @@ const TeamPage = () => {
         </p>
       </div>
 
-      <div className="container mx-auto max-w-6xl py-8 px-6">
+      <div className="container mx-auto max-w-7xl py-8 px-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           Visionary Board Of Directors
         </h2>
@@ -63,7 +63,9 @@ const TeamPage = () => {
               className="w-full h-[300px] object-cover"
             />
             <div className="p-4">
-              <h3 className="text-xl font-bold text-gray-800">Mr Ngodu Sherpa</h3>
+              <h3 className="text-xl font-bold text-gray-800">
+                Mr Ngodu Sherpa
+              </h3>
               <p className="text-yellow-500 font-semibold">
                 Executive Director
               </p>
@@ -71,8 +73,6 @@ const TeamPage = () => {
           </div>
         </div>
       </div>
-
-  
     </div>
   );
 };

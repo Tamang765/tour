@@ -34,7 +34,7 @@ const Sliderpage = () => {
     <>
       <SliderImage />
       <div className="p-4 lg:p-8 bg-white">
-        <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row justify-between items-center border-b pb-4">
+        <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row justify-between items-center border-b pb-4">
           <div className="flex flex-wrap justify-center space-x-6 text-gray-600 text-sm lg:text-base">
             <a href="#description" className="hover:text-black transition">
               Description
@@ -71,7 +71,7 @@ const Sliderpage = () => {
 
         <section
           id="description"
-          className="container mx-auto max-w-6xl mt-8 lg:flex lg:space-x-8"
+          className="container mx-auto max-w-7xl mt-8 lg:flex lg:space-x-8"
         >
           <div className="lg:w-2/3">
             <h1 className="text-2xl font-bold mb-4">Trip Overview</h1>
@@ -141,8 +141,8 @@ const Sliderpage = () => {
           </div>
         </section>
 
-        <section id="includes" className="container mx-auto max-w-6xl mt-12">
-          <div className="container mx-auto max-w-6xl mt-12">
+        <section id="includes" className="container mx-auto max-w-7xl mt-12">
+          <div className="container mx-auto max-w-7xl mt-12">
             <div className="flex flex-col lg:flex-row lg:space-x-8">
               <div className="lg:w-1/2">
                 <h3 className="text-2xl font-bold mb-6">Includes</h3>
@@ -171,7 +171,7 @@ const Sliderpage = () => {
           </div>
         </section>
 
-        <section id="notes" className="container mx-auto max-w-6xl mt-12">
+        <section id="notes" className="container mx-auto max-w-7xl mt-12">
           <h2 className="text-2xl font-bold mb-6">Trip Notes</h2>
           <p className="text-gray-700">
             Climbers are advised to prepare and train their bodies and mind in a
@@ -193,7 +193,7 @@ const Sliderpage = () => {
           </p>
         </section>
 
-        <section id="reviews" className="container mx-auto max-w-6xl mt-12">
+        <section id="reviews" className="container mx-auto max-w-7xl mt-12">
           <h2 className="text-2xl font-bold mb-6">Reviews</h2>
           <p className="text-gray-700 mb-4">(No reviews yet)</p>
 

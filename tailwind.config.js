@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        mapbg: "url(https://8kexpeditions.com/assets/images/about-bg.jpg)",
+      },
+      colors: {
+        navy: {
+          800: "#0B2F64",
+          900: "#082450",
+        },
+      },
+    },
   },
   plugins: [],
-}
+};

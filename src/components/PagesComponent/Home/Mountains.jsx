@@ -101,6 +101,37 @@ const mountains = [
   },
 ];
 
+const ExpeditionCard = ({ image, name }) => {
+  return (
+    <div className=" w-full h-fit mx-auto rounded-lg overflow-hidden shadow-lg sticky top-[8rem]">
+      {/* Background Image */}
+      <div
+        className="min-h-[50vh] bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${image})`, // Replace with your image URL
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute bottom-10 left-0 w-full   bg-opacity-50 flex flex-col justify-center items-center">
+          {/* Title */}
+          <h2 className="text-white text-3xl font-bold mb-2 text-center">
+            {name}(8,516M)
+          </h2>
+          {/* Buttons */}
+          <div className="flex space-x-4 my-4">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg">
+              VIEW DETAILS
+            </button>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const MountainList = () => {
   const [selectedMountain, setSelectedMountain] = useState(mountains[0]);
 
@@ -109,8 +140,8 @@ const MountainList = () => {
   };
 
   return (
-    <section className="bg-white">
-      <div className="container-lg mx-auto max-w-6xl flex flex-col lg:flex-row gap-8 p-6">
+    <section className="py-8 mt-10">
+      <div className="container-lg mx-auto max-w-7xl flex flex-col lg:flex-row gap-8 px-4">
         <div
           className="lg:w-1/3 h-screen overflow-y-auto"
           style={{
@@ -126,35 +157,41 @@ const MountainList = () => {
             }
           `}
           </style>
-          <h2 className="text-2xl font-bold mb-6">14x8000'ers</h2>
+          <h2 className="text-4xl font-bold mb-6">14x8000'ers</h2>
           <ul className="space-y-4 scrollable-left">
             {mountains.map((mountain, index) => (
               <li
                 key={index}
                 onClick={() => handleSelectMountain(mountain)}
-                className={`flex items-center gap-4 p-3 rounded-lg transition cursor-pointer ${
-                  selectedMountain.name === mountain.name
-                    ? "bg-yellow-100"
-                    : "bg-gray-100"
+                className={`flex items-center gap-4 p-3 rounded-lg transition cursor-pointer group ${
+                  selectedMountain.name === mountain.name ? "" : ""
                 }`}
               >
-                <img
-                  src={mountain.image}
-                  alt={mountain.name}
-                  className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full ${
+                <div
+                  className={`  border-2 p-2 rounded-full group-hover:border-orange-500 ${
                     selectedMountain.name === mountain.name
-                      ? "bg-yellow-500"
-                      : "bg-gray-300"
+                      ? "border-orange-500"
+                      : ""
                   }`}
-                />
+                >
+                  <img
+                    src={mountain.image}
+                    alt={mountain.name}
+                    className={`w-12 h-12 sm:w-20 sm:h-20 rounded-full ${
+                      selectedMountain.name === mountain.name
+                        ? "bg-orange-500"
+                        : "bg-gray-300"
+                    }`}
+                  />
+                </div>
                 <div>
-                  <p className="text-sm sm:text-base font-semibold">
+                  <p className="text-sm sm:text-base font-semibold text-black  ">
                     {mountain.height}
                   </p>
                   <p
-                    className={`text-sm sm:text-base font-bold ${
+                    className={`text-sm sm:text-base font-bold group-hover:text-orange-500 ${
                       selectedMountain.name === mountain.name
-                        ? "text-yellow-500"
+                        ? "text-orange-500 "
                         : "text-gray-800"
                     }`}
                   >
@@ -165,9 +202,12 @@ const MountainList = () => {
             ))}
           </ul>
         </div>
-
         {/* Fixed and Centered Right Side */}
-        <div className="lg:w-2/3 flex items-center justify-center">
+        <ExpeditionCard
+          image={selectedMountain.image}
+          name={selectedMountain.name}
+        />
+        {/* <div className="lg:w-2/3 flex items-center justify-center sticky  top-0 h-fit">
           <div className="w-full max-w-lg bg-white rounded-lg shadow-lg overflow-hidden">
             <img
               src={selectedMountain.image}
@@ -189,7 +229,7 @@ const MountainList = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

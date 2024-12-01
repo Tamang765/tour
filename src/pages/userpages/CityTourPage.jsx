@@ -10,7 +10,7 @@ const CityTourPage = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 px-4">
+        <div className="container mx-auto max-w-7xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 px-4">
           <div className=" text-white p-6 rounded-lg w-full">
             <h1 className="text-4xl md:text-5xl font-bold mb-2">City Tour</h1>
             <p className="text-lg md:text-xl text-yellow-400">Package</p>
@@ -19,7 +19,7 @@ const CityTourPage = () => {
       </div>
 
       <div className=" py-10 px-6 lg:px-20 bg-gray-100">
-        <p className=" container mx-auto max-w-6xl text-gray-700 text-lg leading-relaxed">
+        <p className=" container mx-auto max-w-7xl text-gray-700 text-lg leading-relaxed">
           City Tours are luxury tours that take you around cities with famous
           landmarks. Mostly done with a ride in the private jeep, city tours
           offer an extraordinary opportunity to explore the culture, traditions,
@@ -31,7 +31,7 @@ const CityTourPage = () => {
       </div>
 
       <div className="bg-white">
-        <div className=" container mx-auto max-w-6xl py-10 ">
+        <div className=" container mx-auto max-w-7xl py-10 ">
           <h2 className="text-3xl font-bold mb-8">City Tour Packages</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="w-[17vw] h-[35vh] bg-white shadow-lg rounded-lg overflow-hidden">

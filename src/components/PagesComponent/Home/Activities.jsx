@@ -1,4 +1,5 @@
 import React from "react";
+import { HeadingComponent } from "./UpcomingTrips";
 
 const activities = [
   {
@@ -25,11 +26,13 @@ const activities = [
 ];
 
 const ActivityCard = ({ title, image, icon }) => (
-  <div className=" relative bg-white shadow-lg rounded-lg overflow-hidden">
-    <img src={image} alt={title} className="h-56 w-full object-cover" />
-    <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+  <div className=" relative bg-white shadow-lg rounded-lg overflow-hidden group cursor-pointer">
+    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity " />
+
+    <img src={image} alt={title} className=" h-72 w-full object-cover" />
+    <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col items-center justify-center text-white">
       <span className="text-yellow-500 text-4xl mb-2">
-        <img src={icon} alt="" />
+        <img src={icon} alt="activity" />
       </span>
       <h3 className="text-xl font-semibold">{title}</h3>
     </div>
@@ -37,16 +40,15 @@ const ActivityCard = ({ title, image, icon }) => (
 );
 
 const OtherActivities = () => (
-  <section className="bg-white my-[10vh]">
+  <section className="my-[10vh]">
     <div className="text-center mb-8 bg-gray-800 py-8 ">
-      <h2 className="text-3xl font-bold text-white mb-2">
-        Other <span className="text-yellow-500">Activities</span>
-      </h2>
-      <a href="#" className="text-yellow-500 hover:underline font-semibold">
-        Explore More
-      </a>
+      <HeadingComponent
+        heading={"Other"}
+        section={"Activities"}
+        more={"Explore More"}
+      />
     </div>
-    <div className="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
       {activities.map((activity, index) => (
         <ActivityCard key={index} {...activity} />
       ))}

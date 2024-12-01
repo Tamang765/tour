@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import everest from '../../assets/img/photo/cover.jpeg'
+import everest from "../../assets/img/photo/cover.jpeg";
 const SingleTrekkingProductPage = () => {
   const packages = [
     {
@@ -52,8 +52,7 @@ const SingleTrekkingProductPage = () => {
       <div
         className="relative bg-cover bg-center h-96"
         style={{
-          backgroundImage:
-            `url(${everest})`,
+          backgroundImage: `url(${everest})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -76,7 +75,7 @@ const SingleTrekkingProductPage = () => {
         </p>
       </div>
 
-      <div className="container max-w-6xl mx-auto py-12 px-4">
+      <div className="container max-w-7xl mx-auto py-12 px-4">
         <h2 className="text-center text-2xl font-bold text-gray-800 mb-8">
           Everest Region Packages
         </h2>

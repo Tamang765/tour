@@ -17,7 +17,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-7xl mx-auto px-4 py-8">
         <h1 className="text-black text-4xl font-bold">About 8K Expeditions</h1>
         <p className="text-yellow-500 text-lg font-semibold mb-4">About us </p>
         <p className="text-lg text-gray-600 mb-6">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const SliderSection = () => {
   const affiliations = [
@@ -78,12 +78,12 @@ const SliderSection = () => {
 
   return (
     <div className="bg-gray-800 py-10">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto">
         {/* Affiliations Section */}
         <div className="mb-12">
           <h2 className="text-white text-2xl font-bold mb-6">Affiliations</h2>
           <div className="relative group">
-            <div className="flex space-x-4 overflow-hidden">
+            <div className="flex space-x-4 justify-between overflow-hidden">
               {affiliations
                 .slice(currentAffiliationIndex, currentAffiliationIndex + 7)
                 .map((src, index) => (
@@ -91,7 +91,7 @@ const SliderSection = () => {
                     key={index}
                     src={src}
                     alt={`Affiliation ${index}`}
-                    className="w-[150px] h-[100px] rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+                    className="w-[100px] aspect-square rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
                   />
                 ))}
             </div>
@@ -114,7 +114,7 @@ const SliderSection = () => {
         <div>
           <h2 className="text-white text-2xl font-bold mb-6">Partners</h2>
           <div className="relative group">
-            <div className="flex space-x-4 overflow-hidden">
+            <div className="flex justify-between space-x-4 overflow-hidden">
               {partners
                 .slice(currentPartnerIndex, currentPartnerIndex + 7)
                 .map((src, index) => (
@@ -122,7 +122,7 @@ const SliderSection = () => {
                     key={index}
                     src={src}
                     alt={`Partner ${index}`}
-                    className="w-[150px] h-[100px] rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+                    className="w-[100px] aspect-square rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
                   />
                 ))}
             </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const trips = [
   {
@@ -8,7 +8,7 @@ const trips = [
     detailsLink: "#",
     bookLink: "#",
     image:
-      "https://8kexpeditions.com/uploaded_images/package/package-1724310231.jpg",
+      "https://8kexpeditions.com/uploaded_images/package/package-1717652402.jpeg",
   },
   {
     location: "Pakistan",
@@ -17,7 +17,7 @@ const trips = [
     detailsLink: "#",
     bookLink: "#",
     image:
-      "https://8kexpeditions.com/uploaded_images/package/package-1719125349.jpeg",
+      "https://8kexpeditions.com/uploaded_images/package/package-1717652402.jpeg",
   },
   {
     location: "Nepal",
@@ -86,13 +86,15 @@ const trips = [
 
 const TripCard = ({ location, days, title, detailsLink, bookLink, image }) => (
   <div className="relative bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-    <div className="relative">
+    <div className="relative group border-4">
       <img src={image} alt={title} className="w-full h-[200px] object-cover" />
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute top-2 left-2 bg-yellow-500 text-black text-xs px-3 py-1 rounded">
         {location}
       </div>
-      <div className="absolute bottom-2 left-2 bg-white text-blue-900 text-xs font-semibold px-3 rounded">
+      <div className="absolute bottom-0 h-fit  bg-white w-full text-blue-900 text-xs font-semibold px-3">
+        Nepal
+        <br />
         {days}
       </div>
     </div>
@@ -117,14 +119,13 @@ const TripCard = ({ location, days, title, detailsLink, bookLink, image }) => (
 );
 
 const UpcomingTrips = () => (
-  <section className=" bg-white">
+  <section className=" ">
     <div className="mb-[10vh]">
-      <h2 className="text-3xl font-bold text-center flex items-center justify-center mb-8 bg-gray-800 py-10 h-[20vh] text-white">
-        Upcoming <span className="text-yellow-500">Trips</span>
-      </h2>
-      <div className="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <HeadingComponent heading={"Upcoming"} section={"Trips"} more={""} />
+      <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 mt-32">
         {trips.map((trip, index) => (
-          <TripCard key={index} {...trip} />
+          <ExpeditionCard key={index} {...trip} />
+          // <TripCard key={index} {...trip} />
         ))}
       </div>
     </div>
@@ -132,3 +133,95 @@ const UpcomingTrips = () => (
 );
 
 export default UpcomingTrips;
+
+export function ExpeditionCard({
+  location,
+  days,
+  title,
+  detailsLink,
+  bookLink,
+  image,
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div className="lg:max-w-xl mx-auto">
+      <div
+        className="relative rounded-lg overflow-hidden group"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Main Image Container */}
+        <div className="relative aspect-video overflow-hidden">
+          {/* Background Image */}
+          <img
+            src={image}
+            alt="Makalu Mountain"
+            className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+
+          {/* Hover Overlay */}
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
+
+          {/* Text Overlay */}
+          <div
+            className={`absolute inset-x-0 bottom-0 bg-gray-100 bg-opacity-20 transition-all duration-300 ease-in-out ${
+              isHovered ? "h-full" : "h-0"
+            }`}
+          >
+            <div
+              className={`p-6 transform transition-transform duration-300 ease-in-out ${
+                isHovered ? "translate-y-0" : "translate-y-full"
+              }`}
+            >
+              <h3 className="text-orange-400 text-3xl font-bold mb-2">
+                {location}
+              </h3>
+              <p className="text-white text-xl font-bold">{days}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Card Content */}
+      <div className="mt-3 ">
+        <h2 className="text-lg font-bold text-gray-900 min-h-16 line-clamp-3">
+          {title}
+        </h2>
+
+        <div className="flex items-center justify-between">
+          <a
+            href={detailsLink}
+            className="text-orange-400 group  font-bold hover:text-orange-500 text-sm transition-colors flex items-center gap-1"
+          >
+            VIEW DETAILS
+            <span
+              className="text-xl group-hover:translate-x-3 duration-700 ease-out"
+              aria-hidden="true"
+            >
+              »
+            </span>
+          </a>
+
+          <button className="bg-navy-800 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-navy-900 transition-colors hover:text-orange-500">
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export const HeadingComponent = ({ heading, section, more, link }) => {
+  return (
+    <div className="flex flex-col gap-3 items-center justify-center  bg-gray-800 py-10  text-white">
+      <h2 className="text-4xl font-bold text-center flex items-center justify-center bg-gray-800  text-white gap-2">
+        {heading} <span className="text-yellow-500"> {section}</span>
+      </h2>
+      <a href={link} className="text-yellow-500 hover:underline font-semibold">
+        {more}
+      </a>
+    </div>
+  );
+};
+``;
