@@ -20,7 +20,7 @@ const TeamPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto max-w-5xl py-12 px-6">
+      <div className="container mx-auto max-w-5xl py-12 px-6 text-justify">
         <p className="text-lg text-gray-700 leading-relaxed">
           At <span className="text-yellow-500 font-bold">Ngodu Sherpa</span>,
           our team brings together a combination of
@@ -41,7 +41,7 @@ const TeamPage = () => {
           </span>
           , and other 8000m peaks of the world.
         </p>
-        <p className="text-lg text-gray-700 leading-relaxed mt-4">
+        <p className="text-lg text-gray-700 leading-relaxed mt-4 ">
           Meet the exceptional team at{" "}
           <span className="text-yellow-500 font-bold">Ngodu Sherpa</span>,
           including our Directors, Official Staff, IFMGA-certified Guides,
@@ -51,7 +51,7 @@ const TeamPage = () => {
         </p>
       </div>
 
-      <div className="container mx-auto max-w-7xl py-8 px-6">
+      <div className="container mx-auto max-w-5xl py-8 px-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           Visionary Board Of Directors
         </h2>

@@ -162,9 +162,7 @@ const Header = ({ projectSectionRef }) => {
     } else if (window.scrollY <= 10) {
       setIsNavVisible(true);
     }
-    setNavColor(
-      window.scrollY > 10 ? "bg-white shadow-lg" : "bg-opacity-20 bg-[#082740] "
-    );
+    setNavColor(window.scrollY > 10 ? "bg-white shadow-lg" : "bg-opacity-20 bg-[#082740] ");
   };
 
   useEffect(() => {
@@ -198,16 +196,14 @@ const Header = ({ projectSectionRef }) => {
     { name: "Trekking", href: "/trekking" },
     { name: "Other activities", href: "/activities" },
     { name: "Useful Info", href: "/useful-info" },
-    { name: "Company", href: "/about-company" },
+    { name: "Our Team", href: "/teampage" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
   return (
     <div>
       {isNavVisible && (
-        <nav
-          className={`fixed top-0 w-full flex justify-between items-center transition-all duration-1000 z-20 px-4 md:px-10 lg:px-[10rem] h-20  ${navColor}`}
-        >
+        <nav className={`fixed top-0 w-full flex justify-between items-center transition-all duration-1000 z-20 px-4 md:px-10 lg:px-[10rem] h-20  ${navColor}`}>
           {/* <img
             src={
               navColor === "bg-white"
@@ -231,12 +227,7 @@ const Header = ({ projectSectionRef }) => {
           <ul className="hidden lg:flex items-center list-none p-0 m-0 gap-6">
             {navItems.map((item) => (
               <li key={item.name}>
-                <Link
-                  to={item.href}
-                  className={`font-bold uppercase text-sm text-nowrap ${
-                    navColor.includes("bg-white") ? "text-black" : "text-white"
-                  }`}
-                >
+                <Link to={item.href} className={`font-bold uppercase text-sm text-nowrap ${navColor.includes("bg-white") ? "text-black" : "text-white"}`}>
                   {item.name}
                 </Link>
               </li>
@@ -244,23 +235,8 @@ const Header = ({ projectSectionRef }) => {
           </ul>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-3xl"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? (
-              <X
-                className={
-                  navColor.includes("bg-white") ? "text-black" : "text-white "
-                }
-              />
-            ) : (
-              <Menu
-                className={
-                  navColor.includes("bg-white") ? "text-black" : "text-white"
-                }
-              />
-            )}
+          <button className="lg:hidden text-3xl" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {isMobileMenuOpen ? <X className={navColor.includes("bg-white") ? "text-black" : "text-white "} /> : <Menu className={navColor.includes("bg-white") ? "text-black" : "text-white"} />}
           </button>
         </nav>
       )}
@@ -270,20 +246,13 @@ const Header = ({ projectSectionRef }) => {
         <div className="lg:hidden fixed inset-0 z-30 bg-black bg-opacity-50">
           <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-xl z-40 overflow-y-auto flex  flex-col  justify-between">
             <div className="p-4">
-              <button
-                className="absolute top-4 right-4 text-2xl"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
+              <button className="absolute top-4 right-4 text-2xl" onClick={() => setIsMobileMenuOpen(false)}>
                 <X />
               </button>
               <ul className="mt-8 space-y-4">
                 {navItems.map((item) => (
                   <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="block font-bold uppercase text-black hover:text-gray-600"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
+                    <Link href={item.href} className="block font-bold uppercase text-black hover:text-gray-600" onClick={() => setIsMobileMenuOpen(false)}>
                       {item.name}
                     </Link>
                   </li>

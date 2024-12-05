@@ -146,18 +146,18 @@ const ExplorePackages = () => {
             Our Seasonal Recommendations
           </p>
         </div>
-        <div className="max-w-7xl flex container mx-auto space-x-4 mb-6 px-4">
+        <div className="max-w-7xl flex container mx-auto space-x-4 mobile:space-x-2 mb-6 px-4 mobile:absolute">
           {seasons.map((season) => (
             <button
               key={season.name}
               onClick={() => setActiveSeason(season.name)}
-              className={`px-4 py-2 rounded-lg ${
+              className={`px-4 py-2 rounded-lg mobile:px-1 ${
                 activeSeason === season.name
                   ? "bg-yellow-500 text-white"
                   : "bg-white text-gray-700"
               } font-semibold shadow-lg`}
             >
-              <span className="text-lg mr-2">{season.icon}</span> {season.name}
+              <span className="text-lg md:mr-2 mobile:text-sm mobile:mr-0">{season.icon}</span> {season.name}
             </button>
           ))}
         </div>

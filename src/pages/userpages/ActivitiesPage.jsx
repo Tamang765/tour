@@ -26,10 +26,13 @@ const activities = [
 ];
 
 const ActivityCard = ({ title, image, icon }) => (
-  <Link to={"/city-tour"} className="h-[40vh] flex items-center justify-center">
+  <Link to={"/city-tour"} className=" group h-fit flex items-center justify-center">
     <div className="mb-9 relative bg-white shadow-lg rounded-lg overflow-hidden">
-      <img src={image} alt={title} className="h-56 w-full object-cover" />
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+      <img src={image} alt={title} className="h-80 w-full object-cover" />
+      <div className="absolute inset-0 bg-black/20">
+
+      </div>
+      <div className="absolute inset-0 bg-black bg-opacity-0 flex flex-col items-center justify-center text-white group-hover:bg-opacity-50 transition-all">
         <span className="text-yellow-500 text-4xl mb-2">
           <img src={icon} alt="" />
         </span>
@@ -41,19 +44,19 @@ const ActivityCard = ({ title, image, icon }) => (
 const ActivitiesPage = () => {
   return (
     <div className="w-full">
-      <div className="relative w-full h-[40vh]">
+      <div className="relative w-full h-[80vh]">
         <img
           src="https://8kexpeditions.com/uploaded_images/page/other-activities-23.jpg"
           alt="Other Activities"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto max-w-7xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 px-4">
-          <div className=" text-white p-6 rounded-lg w-full">
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">
+        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5  ">
+          <div className=" text-white py-6 rounded-lg w-full">
+            <h1 className="text-3xl md:text-4xl font-[1000] mb-2 tracking-wide">
               Other Activities
             </h1>
-            <p className="text-lg md:text-xl text-yellow-400">
+            <p className="text-lg md:text-xl text-yellow-400 font-bold">
               4 Adventure Styles
             </p>
           </div>
@@ -61,8 +64,8 @@ const ActivitiesPage = () => {
       </div>
 
       <div className="bg-white">
-        <div className=" container mx-auto max-w-7xl py-10 px-6 lg:px-20 bg-white">
-          <p className="text-gray-700 text-lg leading-relaxed">
+        <div className=" container mx-auto max-w-6xl py-28 bg-white">
+          <p className="text-black text-md leading-relaxed">
             As an Adventure Enthusiast, you may want to explore many other
             activities that 8K Expeditions offers. Be it a city tour, cultural
             trips, river raftings, jungle safaris, or any customized trips that
@@ -70,7 +73,7 @@ const ActivitiesPage = () => {
           </p>
         </div>
 
-        <div className="container mx-auto max-w-7xl">
+        <div className="container mx-auto max-w-6xl">
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {activities.map((activity, index) => (
               <ActivityCard key={index} {...activity} />

@@ -1,43 +1,30 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import React from "react";
+import image from "../../assets/img/footer/visa.png"
+import image2 from "../../assets/img/footer/trip.png"
 import SliderSection from "../PagesComponent/FooterSection/SliderFooter";
 const Footer = () => {
   return (
     <>
       <footer className="bg-gray-800 text-white py-10 ">
-        <div className="max-w-7xl m-auto px-4">
+        <div className="max-w-6xl m-auto px-4">
           <SliderSection />
         </div>
-        <div className="container mx-auto max-w-7xl m-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div className="container mx-auto max-w-6xl m-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
             <div>
               <h2 className="text-3xl font-bold mb-4">8K Expeditions</h2>
               <p className="text-gray-400 mb-4">We Accept:</p>
               <div className="flex space-x-2 mb-4">
                 <img
-                  src="https://via.placeholder.com/50x30?text=Visa"
+                  src={image}
                   alt="Visa"
-                  className="w-[50px] aspect-square"
+                  className="w-full h-[50px] aspect-square"
                 />
-                <img
-                  src="https://via.placeholder.com/50x30?text=MasterCard"
-                  alt="MasterCard"
-                  className="w-[50px] aspect-square"
-                />
-                <img
-                  src="https://via.placeholder.com/50x30?text=Amex"
-                  alt="American Express"
-                  className="w-[50px] aspect-square"
-                />
-                <img
-                  src="https://via.placeholder.com/50x30?text=Discover"
-                  alt="Discover"
-                  className="w-[50px] aspect-square"
-                />
+                
               </div>
               <p className="text-gray-400">Recommended By:</p>
               <img
-                src="https://via.placeholder.com/100x30?text=TripAdvisor"
+                src={image2}
                 alt="TripAdvisor"
                 className="mt-2"
               />
@@ -65,6 +52,18 @@ const Footer = () => {
 
             <div>
               <h3 className="font-bold mb-2">7 Summits</h3>
+              <ul className="flex flex-col text-gray-400 space-y-2">
+                <li>Mount Everest</li>
+                <li>Cerro Aconcagua</li>
+                <li>Kilimanjaro</li>
+                <li>McKinley (Denali)</li>
+                <li>Mount Elbrus</li>
+                <li>Mount Vinson</li>
+                <li>Carstensz Pyramid</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-2">Other Links</h3>
               <ul className="flex flex-col text-gray-400 space-y-2">
                 <li>Mount Everest</li>
                 <li>Cerro Aconcagua</li>
