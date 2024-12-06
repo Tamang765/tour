@@ -5,13 +5,13 @@ const ContactUsPage = () => {
   return (
     <div>
       <div className="w-full">
-        <div className="relative w-full h-[80vh]">
+        <div className="relative w-full h-[80vh] mobile:h-[50vh]">
           <img src="https://8kexpeditions.com/uploaded_images/page/other-activities-23.jpg" alt="Other Activities" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 px-4">
             <div className=" text-white py-6  rounded-lg w-full">
               <h1 className="text-4xl font-[1000] mb-4">Contact Us</h1>
-              <p className="text-sm w-[30vw]">Eight K Expeditions Pvt. Ltd. is dedicated to providing you the best service in the Travel and Tourism Industry. Our Customer Support is available 24/7 for any queries you may have. Just give us a call or leave us a text. We will respond right away.</p>
+              <p className="text-sm w-[30vw] mobile:w-[50vw]">Eight K Expeditions Pvt. Ltd. is dedicated to providing you the best service in the Travel and Tourism Industry. Our Customer Support is available 24/7 for any queries you may have. Just give us a call or leave us a text. We will respond right away.</p>
               <div className="flex space-x-4 mt-6">
                 <a href="#" className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white hover:bg-yellow-600 transition">
                   <i>

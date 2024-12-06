@@ -66,7 +66,7 @@ export function ExpeditionHero() {
 
   return (
     <div
-      className=" bg-navy-900 relative flex flex-col items-center justify-center p-4 py-32"
+      className=" bg-navy-900 relative flex flex-col items-center justify-center p-4 py-32 mobile:py-20 mobile:gap-10 mobile:flex-col-reverse"
       style={{
         backgroundImage: `url(${"https://8kexpeditions.com/uploaded_images/page/expeditions-2.jpeg"})`,
 
@@ -82,7 +82,7 @@ export function ExpeditionHero() {
       </CircleComp>
 
       {/* Left Circle */}
-      <div className="absolute left-[10%] md:left-[25%] top-[50%]   transform transition-transform hover:scale-105">
+      <div className="absolute left-[10%] md:left-[25%] top-[50%]   transform transition-transform hover:scale-105 mobile:relative mobile:left-0">
         <CircleComp>
           <div className="text-sm font-medium text-gray-600">OVER</div>
           <div className="text-4xl font-bold text-gray-900">700</div>
@@ -91,7 +91,7 @@ export function ExpeditionHero() {
       </div>
 
       {/* Right Circle */}
-      <div className="absolute right-[10%] md:right-[25%] top-[50%] transform transition-transform hover:scale-105">
+      <div className="absolute right-[10%] md:right-[25%] top-[50%] transform transition-transform hover:scale-105 mobile:relative mobile:right-0">
         <CircleComp>
           <div className="text-sm font-medium text-gray-600">OVER</div>
           <div className="text-4xl font-bold text-gray-900">700</div>
@@ -100,8 +100,8 @@ export function ExpeditionHero() {
       </div>
 
       {/* Center Content */}
-      <div className="text-center z-10 mt-32 md:mt-0">
-        <img src="/logowhite.png" alt="logo" className=" w-56 aspect-square " />
+      <div className="text-center z-10 mt-32 md:mt-0 mobile:mt-0">
+        <img src="/logowhite.png" alt="logo" className=" w-56 mobile:w-64 aspect-square " />
       </div>
     </div>
   );

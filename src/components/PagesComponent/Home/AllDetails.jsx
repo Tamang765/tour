@@ -10,13 +10,13 @@ const features = [
 
 const Why8KExpeditions = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto max-w-7xl text-center">
-        <h2 className="text-3xl font-bold mb-4">Why 8K Expeditions?</h2>
-        <p className="text-yellow-500 font-semibold mb-8">
+    <section className="py-16 bg-white mobile:py-20">
+      <div className="container mx-auto mobile:max-w-xl text-center">
+        <h2 className="text-3xl font-bold mb-4 mobile:text-4xl mobile:text-center mobile:px-10 mobile:font-[900]">Why 8K Expeditions?</h2>
+        <p className="text-yellow-500 font-semibold mb-8 mobile:font-bold mobile:px-10">
           Unwavering Safety & Exceptional Quality Service!
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid mobile:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <div className="lg:w-24 w-32 lg:h-24 h-32 rounded-full bg-gray-100 flex items-center justify-center mb-4">

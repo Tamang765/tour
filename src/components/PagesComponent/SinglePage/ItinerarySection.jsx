@@ -62,18 +62,18 @@ const ItinerarySection = () => {
         </div>
         <div>
           {Itineraries.map((item, index) => (
-            <div className={`relative px-12  ${index !== Itineraries.length - 1 ? "min-h-20 border-l-2 border-black border-dotted" : "min-h-5"}`} key={index}>
+            <div className={`relative px-12  ${index !== Itineraries.length - 1 ? "min-h-20 mobile:min-h-32 border-l-2 border-black border-dotted" : "min-h-5"}`} key={index}>
               <div className="absolute -top-2 -left-7 w-14 h-14 flex items-center justify-center rounded-full bg-yellow-500 text-white font-bold">{item.day}</div>
               <div className="title">
                 <h2 className="font-semibold text-gray-700 hover:text-yellow-500 transition-colors duration-500 text-lg cursor-pointer" onClick={() => toggleVisibility(index)}>
                   {item.title}
                 </h2>
               </div>
-              <div className={`hiddens overflow-hidden transition-[max-height] duration-1000 ease-in-out ${expandedIndex === index ? "max-h-screen" : "max-h-0"}`}>
-                <div className="desc mt-5">
+              <div className={`hiddens overflow-hidden transition-[max-height] duration-1000 ease-in-out ${expandedIndex === index ? "max-h-[200vh]" : "max-h-0"}`}>
+                <div className="desc mt-5 mobile:text-justify">
                   <p>{item.description}</p>
                 </div>
-                <div className="cards mt-4 grid grid-cols-3 gap-10 mb-5">
+                <div className="cards mt-4 grid grid-cols-3 gap-10 mb-5 mobile:grid-cols-1">
                   <div className="bg-white text-center p-6 rounded-md">
                     <h2 className="text-md font-bold text-gray-700">Altitude</h2>
                     <p className="text-sm">{item.altitude}</p>

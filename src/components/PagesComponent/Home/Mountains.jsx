@@ -157,8 +157,8 @@ const MountainList = () => {
             }
           `}
           </style>
-          <h2 className="text-4xl font-bold mb-6">14x8000'ers</h2>
-          <ul className="space-y-4 scrollable-left">
+          <h2 className="text-4xl font-bold mb-6 mobile:text-3xl">14x8000'ers</h2>
+          <ul className="space-y-4 scrollable-left mobile:space-y-0">
             {mountains.map((mountain, index) => (
               <li
                 key={index}

@@ -122,7 +122,7 @@ const UpcomingTrips = () => (
   <section className=" ">
     <div className="mb-[10vh]">
       <HeadingComponent heading={"Upcoming"} section={"Trips"} more={""} />
-      <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 mt-32">
+      <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mobile:gap-10 px-4 mt-32 mobile:mt-10">
         {trips.map((trip, index) => (
           <ExpeditionCard key={index} {...trip} />
           // <TripCard key={index} {...trip} />
@@ -152,12 +152,12 @@ export function ExpeditionCard({
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Main Image Container */}
-        <div className="relative aspect-video overflow-hidden">
+        <div className="relative aspect-video overflow-hidden mobile:overflow-visible">
           {/* Background Image */}
           <img
             src={image}
             alt="Makalu Mountain"
-            className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+            className="w-full h-full mobile:h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
 
           {/* Hover Overlay */}
@@ -185,7 +185,7 @@ export function ExpeditionCard({
 
       {/* Card Content */}
       <div className="mt-3 ">
-        <h2 className="text-lg font-bold text-gray-900 min-h-16 line-clamp-3">
+        <h2 className="text-lg font-bold text-gray-900 min-h-16 line-clamp-3 mobile:font-[900]">
           {title}
         </h2>
 
@@ -203,7 +203,7 @@ export function ExpeditionCard({
             </span>
           </a>
 
-          <button className="bg-navy-800 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-navy-900 transition-colors hover:text-orange-500">
+          <button className="bg-navy-800 text-white px-8 py-3 rounded-full mobile:rounded-none text-sm font-semibold hover:bg-navy-900 transition-colors hover:text-orange-500">
             BOOK NOW
           </button>
         </div>
@@ -214,8 +214,8 @@ export function ExpeditionCard({
 
 export const HeadingComponent = ({ heading, section, more, link }) => {
   return (
-    <div className="flex flex-col gap-3 items-center justify-center  bg-gray-800 py-10  text-white">
-      <h2 className="text-4xl font-bold text-center flex items-center justify-center bg-gray-800  text-white gap-2">
+    <div className="flex flex-col gap-3 items-center justify-center  bg-gray-800 py-10 mobile:py-5 text-white">
+      <h2 className="text-4xl mobile:text-3xl font-bold text-center flex items-center justify-center bg-gray-800  text-white gap-2">
         {heading} <span className="text-yellow-500"> {section}</span>
       </h2>
       <a href={link} className="text-yellow-500 hover:underline font-semibold">

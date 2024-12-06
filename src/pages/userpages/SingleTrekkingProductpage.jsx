@@ -44,13 +44,13 @@ const SingleTrekkingProductPage = () => {
   return (
     <div className="bg-gray-100">
       <div
-        className="relative bg-cover bg-center h-[80vh]"
+        className="relative bg-cover bg-center h-[80vh] mobile:h-[50vh]"
         style={{
           backgroundImage: `url(${everest})`,
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 ">
+        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 ">
           <div className=" text-white py-6 rounded-lg w-full">
             <h1 className="text-3xl md:text-4xl font-[1000] mb-2 tracking-wide">Everest Region</h1>
             <p className="text-lg md:text-xl text-yellow-400 font-bold">6 Packages</p>
@@ -64,7 +64,7 @@ const SingleTrekkingProductPage = () => {
         </p>
       </div>
 
-      <div className="container max-w-6xl mx-auto py-12">
+      <div className="container max-w-6xl mx-auto py-12 mobile:px-4">
         <h2 className="text-center text-2xl font-bold text-gray-800 mb-8">Everest Region Packages</h2>
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6">
           {packages.map((pkg, index) => (

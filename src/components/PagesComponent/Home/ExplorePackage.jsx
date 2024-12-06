@@ -137,7 +137,7 @@ const ExplorePackages = () => {
 
   return (
     <section className="">
-      <div className="bg-gray-800 py-10 mb-8 ">
+      <div className="relative bg-gray-800 py-10 mb-8 ">
         <div className="max-w-7xl container mx-auto  mb-8 px-4">
           <h2 className="text-4xl max-w-7xl font-bold text-white mb-2">
             Explore <span className="text-yellow-500">Packages</span>
@@ -146,7 +146,7 @@ const ExplorePackages = () => {
             Our Seasonal Recommendations
           </p>
         </div>
-        <div className="max-w-7xl flex container mx-auto space-x-4 mobile:space-x-2 mb-6 px-4 mobile:absolute">
+        <div className="max-w-7xl flex container mx-auto space-x-4 mobile:space-x-2 mb-6 px-4 mobile:absolute mobile:-bottom-10">
           {seasons.map((season) => (
             <button
               key={season.name}
@@ -162,7 +162,7 @@ const ExplorePackages = () => {
           ))}
         </div>
       </div>
-      <div className="max-w-7xl container mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-10 mb-8 px-4">
+      <div className="max-w-7xl container mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-10 mb-8 px-4 mobile:mt-20">
         {filteredTrips.map((trip, index) => (
           <ExpeditionCard key={index} {...trip} />
         ))}
