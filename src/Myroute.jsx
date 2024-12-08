@@ -11,6 +11,7 @@ import CityTourPage from "./pages/userpages/CityTourPage";
 import ContactUsPage from "./pages/userpages/ContactUsPage";
 import UsefulInfoPage from "./pages/userpages/UsefulPage";
 import TeamPage from "./pages/userpages/TeamPage";
+import Expeditions from "./pages/userpages/Expeditions";
 
 const Myroute = () => {
   const projectSectionRef = useRef(null);
@@ -35,6 +36,7 @@ const Myroute = () => {
           />
           <Route path="TeamPage" element={<TeamPage />} />
           <Route path="activities" element={<ActivitiesPage />} />
+          <Route path="expeditions" element={<Expeditions />} />
           <Route path="city-tour" element={<CityTourPage />} />
           <Route path="contact-us" element={<ContactUsPage />} />
           <Route path="useful-info" element={<UsefulInfoPage />} />

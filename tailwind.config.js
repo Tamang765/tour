@@ -7,6 +7,7 @@ export default {
         mapbg: "url(https://8kexpeditions.com/assets/images/about-bg.jpg)",
       },
       screens:{
+        medium: { min: "767px", max: "990px" },
         mobile: { max: "766px" },
       },
       colors: {

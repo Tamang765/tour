@@ -5,22 +5,22 @@ import ceo from "../../assets/img/photo/meroway.jpeg";
 const TeamPage = () => {
   return (
     <div className="bg-white">
-      <div className="relative w-full h-[50vh]">
+      <div className="relative w-full h-[80vh]">
         <img
           src={ceo}
           alt="Our Team Background"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
-          <h1 className="text-4xl font-bold">About Ngodu</h1>
-          <p className="text-lg text-yellow-400 mt-2 font-semibold">
-            Experienced mountain climber and good trekking guide
-          </p>
+        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 medium:px-6">
+          <div className=" text-white py-6 rounded-lg w-full">
+            <h1 className="text-3xl md:text-4xl font-[1000] mb-2 tracking-wide">Our Team</h1>
+            <p className="text-lg md:text-xl text-yellow-400 font-bold">our team</p>
+          </div>
         </div>
       </div>
 
-      <div className="container mx-auto max-w-5xl py-12 px-6 text-justify">
+      <div className="container mx-auto max-w-6xl py-12 text-justify medium:px-6 mobile:px-4">
         <p className="text-lg text-gray-700 leading-relaxed">
           At <span className="text-yellow-500 font-bold">Ngodu Sherpa</span>,
           our team brings together a combination of
@@ -51,7 +51,7 @@ const TeamPage = () => {
         </p>
       </div>
 
-      <div className="container mx-auto max-w-5xl py-8 px-6">
+      <div className="container mx-auto max-w-6xl py-8 mobile:px-4 medium:px-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           Visionary Board Of Directors
         </h2>

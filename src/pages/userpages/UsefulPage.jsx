@@ -3,14 +3,14 @@ import React from "react";
 const UsefulInfoPage = () => {
   return (
     <div className="bg-white">
-      <div className="relative w-full h-[80vh] mobile:h-[50vh]">
+      <div className="relative w-full h-[80vh]">
         <img
           src="https://8kexpeditions.com/uploaded_images/page/useful-info-4.jpg"
           alt="Useful Info Background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30"></div>
-        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 ">
+        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 medium:px-6 ">
         <div className=" text-white py-6 rounded-lg w-full">
             <h1 className="text-3xl md:text-4xl font-[1000] mb-2 tracking-wide">
               8k Expectations
@@ -22,7 +22,7 @@ const UsefulInfoPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto max-w-6xl py-12 mobile:px-4 ">
+      <div className="container mx-auto max-w-6xl py-12 mobile:px-4 medium:px-6 ">
         <h2 className="text-2xl font-bold mb-4">
           Here are some bonuses of Useful Information:
         </h2>

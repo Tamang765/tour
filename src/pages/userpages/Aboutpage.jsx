@@ -4,17 +4,16 @@ const AboutPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       <div
-        className="w-full h-[50vh] bg-cover bg-center"
+        className="w-full h-[50vh] bg-cover bg-center mobile:h-[50vh] relative"
         style={{
           backgroundImage: "url('https://8kexpeditions.com/uploaded_images/page/about-us-6.JPG')",
         }}
       >
-        <div className="w-full h-full bg-black bg-opacity-40 flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold">About 8K Expeditions</h1>
-        </div>
+<div className="absolute inset-0 bg-black/50"></div>
+
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-28">
+      <div className="max-w-6xl mx-auto mobile:px-4 medium:px-6 py-12">
         <h1 className="text-black text-4xl font-[1000]">8K Expeditions</h1>
         <p className="text-yellow-500 text-lg font-bold mt-3 mb-5">About us </p>
         <p className="text-md text-black mb-1 text-justify">8K EXPEDITIONS is a world-class and transformational expedition and adventure company with its corporate office based in Kathmandu, one of the most picturesque places in the world.</p>

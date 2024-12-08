@@ -47,12 +47,13 @@ const Header = ({ projectSectionRef }) => {
   }, [isInProjectSection]);
 
   const navItems = [
-    { name: "About Ngodu", href: "/about-company" },
-    { name: "Expeditions", href: "/activities" },
+    { name: "Our Team", href: "/teampage" },
+    { name: "Expeditions", href: "/expeditions" },
     { name: "Trekking", href: "/trekking" },
     { name: "Other activities", href: "/activities" },
     { name: "Useful Info", href: "/useful-info" },
-    { name: "Our Team", href: "/teampage" },
+
+    { name: "About Ngodu", href: "/about-company" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
@@ -88,7 +89,7 @@ const Header = ({ projectSectionRef }) => {
 
       {/* Mobile Menu */}
       <div className={`fixed inset-0 z-30 bg-black bg-opacity-50 transition-opacity duration-200 ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`} onClick={() => setIsMobileMenuOpen(false)}></div>
-      <div className={` text-white fixed inset-y-0 right-0 max-w-xs w-full bg-primary shadow-xl z-40 overflow-y-auto flex flex-col justify-between transition-transform duration-200 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={` text-white fixed inset-y-0 right-0 max-w-xs medium:max-w-xl w-full bg-primary shadow-xl z-40 overflow-y-auto flex flex-col justify-between transition-transform duration-200 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="p-4">
           <button className="absolute top-4 right-4 text-2xl border-2 p-1 rounded-full" onClick={() => setIsMobileMenuOpen(false)}>
             <X />

@@ -140,10 +140,10 @@ const MountainList = () => {
   };
 
   return (
-    <section className="py-8 mt-10">
-      <div className="container-lg mx-auto max-w-7xl flex flex-col lg:flex-row gap-8 px-4">
+    <section className="py-10 ">
+      <div className="container-lg mx-auto max-w-6xl flex flex-col lg:flex-row gap-8 mobile:px-4 medium:px-6 medium:flex-row">
         <div
-          className="lg:w-1/3 h-screen overflow-y-auto"
+          className="lg:w-1/3 medium:w-2/3 h-screen overflow-y-auto"
           style={{
             msOverflowStyle: "none", // Hide scrollbar for IE
             scrollbarWidth: "none", // Hide scrollbar for Firefox

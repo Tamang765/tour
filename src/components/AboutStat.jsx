@@ -25,7 +25,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4">
+    <div className="w-full mobile:px-4">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center mobile:grid-cols-1 mobile:gap-10">
         {stats.map((stat, index) => (
           <div

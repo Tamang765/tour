@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-800 text-white py-10 ">
-        <div className="max-w-6xl m-auto mobile:px-4">
+        <div className="max-w-6xl m-auto mobile:px-4 medium:px-6">
           <SliderSection />
         </div>
-        <div className="container mx-auto max-w-6xl m-auto mobile:px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        <div className="container mx-auto max-w-6xl m-auto mobile:px-4 medium:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 medium:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold mb-4 mobile:text-5xl pr-20 mobile:flex mobile:flex-col">
                 8K <span className="mobile:text-lg mobile:text-yellow-500">Expeditions</span>

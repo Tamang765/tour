@@ -3,7 +3,7 @@ import React from "react";
 const ExpeditionStats = () => {
   return (
     <section
-      className="relative flex items-center justify-center h-[60vh] bg-cover bg-center"
+      className="relative flex items-center justify-center h-[40vh] bg-cover bg-center"
       style={{
         backgroundImage: `url(${"https://8kexpeditions.com/uploaded_images/feature/8k-expeditions-the-responsible-climbers-114057.jpeg"})`,
       }}
@@ -66,7 +66,7 @@ export function ExpeditionHero() {
 
   return (
     <div
-      className=" bg-navy-900 relative flex flex-col items-center justify-center p-4 py-32 mobile:py-20 mobile:gap-10 mobile:flex-col-reverse"
+      className=" bg-navy-900 relative flex flex-col items-center justify-center p-4 py-28 mobile:py-20 mobile:gap-10 mobile:flex-col-reverse"
       style={{
         backgroundImage: `url(${"https://8kexpeditions.com/uploaded_images/page/expeditions-2.jpeg"})`,
 

@@ -12,7 +12,7 @@ const Sliderpage = () => {
       <div className="relative  bg-white">
         <div className="border-b mobile:fixed mobile:bottom-0 mobile:left-0 mobile:right-0 mobile:bg-white mobile:border-t-2 mobile:z-[100]">
           <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row justify-between items-center ">
-            <div className="flex flex-wrap justify-center space-x-6 text-gray-800 text-md lg:text-base font-semibold mobile:hidden">
+            <div className="flex flex-wrap justify-center space-x-6 text-gray-800 text-md lg:text-base font-semibold mobile:hidden medium:py-5 medium:flex-row">
               <a href="#description" className="hover:text-black transition">
                 Description
               </a>
@@ -43,7 +43,7 @@ const Sliderpage = () => {
           </div>
         </div>
 
-        <section id="description" className="container mx-auto max-w-6xl mt-8 lg:flex lg:space-x-8 mobile:px-4">
+        <section id="description" className="container mx-auto max-w-6xl mt-8 lg:flex lg:space-x-8 mobile:px-4 medium:px-6">
           <div className="lg:w-3/5 text-justify">
             <div className="overview">
               <h1 className="text-3xl text-gray-700 font-[1000] mb-4">Trip Overview</h1>
@@ -129,11 +129,11 @@ const Sliderpage = () => {
             </div>
           </div>
         </section>
-        <section id="itinerary" className="bg-gray-100  mt-10 mobile:px-4">
+        <section id="itinerary" className="bg-gray-100  mt-10 mobile:px-4 medium:px-6">
           <ItinerarySection />
         </section>
 
-        <section id="includes" className="container mx-auto max-w-6xl mt-12 mobile:px-4">
+        <section id="includes" className="container mx-auto max-w-6xl mt-12 mobile:px-4 medium:px-6">
           <div className="container mx-auto max-w-7xl mt-12">
             <div className="flex flex-col lg:flex-row lg:space-x-8 relative h-fit">
               <div className="lg:w-1/2">
@@ -168,7 +168,7 @@ const Sliderpage = () => {
           </div>
         </section>
 
-        <section id="notes" className="container mx-auto max-w-6xl mt-12 mobile:px-4">
+        <section id="notes" className="container mx-auto max-w-6xl mt-12 mobile:px-4 medium:px-6">
           <h2 className="text-2xl font-bold mb-6">Trip Notes</h2>
           <p className="text-gray-700">Climbers are advised to prepare and train their bodies and mind in a perfect way to adapt to the remoteness, high altitude, and distance from the families. It is also advised to carry lesser amounts of valuable belongings. Always keep a copy of your passport and photos with you.</p>
           <p className="text-gray-700 mt-4">
@@ -177,7 +177,7 @@ const Sliderpage = () => {
           <p className="text-gray-700 mt-4">Thank you for joining us on our Expedition and Trekking!</p>
         </section>
 
-        <section id="reviews" className="container mx-auto max-w-6xl my-12 mobile:px-4">
+        <section id="reviews" className="container mx-auto max-w-6xl my-12 mobile:px-4 medium:px-6">
           <h2 className="text-2xl font-bold mb-6">Reviews</h2>
           <p className="text-gray-700 mb-4">(No reviews yet)</p>
 

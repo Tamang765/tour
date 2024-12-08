@@ -48,7 +48,7 @@ const OtherActivities = () => (
         more={"Explore More"}
       />
     </div>
-    <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+    <div className="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mobile:px-4 medium:px-6">
       {activities.map((activity, index) => (
         <ActivityCard key={index} {...activity} />
       ))}

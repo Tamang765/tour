@@ -11,7 +11,7 @@ const features = [
 const Why8KExpeditions = () => {
   return (
     <section className="py-16 bg-white mobile:py-20">
-      <div className="container mx-auto mobile:max-w-xl text-center">
+      <div className="container max-w-6xl mx-auto mobile:max-w-xl text-center mobile:px-4">
         <h2 className="text-3xl font-bold mb-4 mobile:text-4xl mobile:text-center mobile:px-10 mobile:font-[900]">Why 8K Expeditions?</h2>
         <p className="text-yellow-500 font-semibold mb-8 mobile:font-bold mobile:px-10">
           Unwavering Safety & Exceptional Quality Service!
