@@ -141,9 +141,9 @@ const MountainList = () => {
 
   return (
     <section className="py-10 ">
-      <div className="container-lg mx-auto max-w-6xl flex flex-col lg:flex-row gap-8 mobile:px-4 medium:px-6 medium:flex-row">
+      <div className=" w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem] flex flex-col lg:flex-row md:flex-row gap-8">
         <div
-          className="lg:w-1/3 medium:w-2/3 h-screen overflow-y-auto"
+          className="lg:w-1/3 md:w-2/3 h-screen overflow-y-auto"
           style={{
             msOverflowStyle: "none", // Hide scrollbar for IE
             scrollbarWidth: "none", // Hide scrollbar for Firefox
@@ -157,8 +157,8 @@ const MountainList = () => {
             }
           `}
           </style>
-          <h2 className="text-4xl font-bold mb-6 mobile:text-3xl">14x8000'ers</h2>
-          <ul className="space-y-4 scrollable-left mobile:space-y-0">
+          <h2 className="text-4xl font-bold mb-6 sm:text-3xl ">14x8000'ers</h2>
+          <ul className="space-y-4 scrollable-left sm:space-y-0">
             {mountains.map((mountain, index) => (
               <li
                 key={index}

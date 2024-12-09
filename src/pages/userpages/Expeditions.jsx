@@ -15,11 +15,11 @@ const Expeditions = () => {
         </div>
       </div> */}
 
-      <div className="max-w-6xl mx-auto py-12 mobile:px-4 medium:px-6">
+      <div className="w-full lg:px-[5rem] md:px-[3rem] sm:[px-2rem] px-[1rem] py-12 ">
         <h1 className="text-black text-4xl font-[1000]">Expeditions</h1>
 
         <h3 className="font-semibold text-yellow-500 text-md mt-2 ">Introduction</h3>
-        <p className="text-black text-md leading-relaxed mt-5">
+        <p className="text-black text-md leading-relaxed mt-5 text-justify">
         Expeditions are organized journeys to attain a particular purpose. In Travel and Tourism, Expeditions are meant to explore the Himalayas, to conquer the height, and to enjoy the victory on the top of snow-capped peaks. Eight K Expeditions organizes numerous trips to the summits of giant snow-capped peaks. Check out our packages to find the best suit for you!
           </p>
       </div>

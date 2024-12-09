@@ -6,24 +6,24 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-800 text-white py-10 ">
-        <div className="max-w-6xl m-auto mobile:px-4 medium:px-6">
+        <div className="w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem]  ">
           <SliderSection />
         </div>
-        <div className="container mx-auto max-w-6xl m-auto mobile:px-4 medium:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 medium:grid-cols-2">
+        <div className="w-full px-[1rem] lg:px-[5rem] md:px-[3rem] m-auto sm:px-[2rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 ">
             <div>
               <h2 className="text-3xl font-bold mb-4 mobile:text-5xl pr-20 mobile:flex mobile:flex-col">
                 8K <span className="mobile:text-lg mobile:text-yellow-500">Expeditions</span>
               </h2>
               <p className="text-gray-400 mb-4 mobile:font-[900] mobile:mt-10">We Accept:</p>
               <div className="flex space-x-2 mb-4">
-                <img src={image} alt="Visa" className="w-full h-[50px] aspect-square mobile:h-[40px] mobile:w-[60%]" />
+                <img src={image} alt="Visa" className="w-full sm:w-[200px] sm:h-[40px] h-[50px] aspect-square mobile:h-[40px] mobile:w-[60%]" />
               </div>
               <p className="text-gray-400 mobile:mt-10 mobile:font-[900]">Recommended By:</p>
-              <img src={image2} alt="TripAdvisor" className="mt-2 mobile:w-[50%]" />
+              <img src={image2} alt="TripAdvisor" className="mt-2 sm:w-[150px] sm:h-[40px]" />
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mobile:grid-cols-1">
+            <div className="grid md:grid-cols-2 gap-4 grid-cols-1">
               <div>
                 <h3 className="font-bold mb-2">Destinations</h3>
                 <ul className="flex flex-col text-gray-400 space-y-2">
@@ -71,7 +71,7 @@ const Footer = () => {
 
           <div className="mb-10">
             <h3 className="text-xl font-bold mb-4">Talk to Experts</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-6">
               <div className="bg-gray-700 rounded-lg p-4 flex items-center">
                 <img src="https://via.placeholder.com/60" alt="Mr. Lakpa Sherpa" className="w-[60px] h-[60px] rounded-full mr-4" />
                 <div>

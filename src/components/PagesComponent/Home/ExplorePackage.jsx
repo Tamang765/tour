@@ -138,15 +138,15 @@ const ExplorePackages = () => {
   return (
     <section className="">
       <div className="relative bg-gray-800 py-10 mb-8 ">
-        <div className="max-w-6xl container mx-auto  mb-8 mobile:px-4 medium:px-6">
-          <h2 className="text-4xl max-w-6xl font-bold text-white mb-2">
+        <div className="w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem] mb-8 ">
+          <h2 className="text-4xl font-bold text-white mb-2">
             Explore <span className="text-yellow-500">Packages</span>
           </h2>
           <p className="text-yellow-500 font-semibold">
             Our Seasonal Recommendations
           </p>
         </div>
-        <div className="max-w-6xl flex container mx-auto space-x-4 mobile:space-x-2 mb-6 mobile:px-4 medium:px-6 mobile:absolute mobile:-bottom-10">
+        <div className="w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem] flex space-x-4  mb-6  ">
           {seasons.map((season) => (
             <button
               key={season.name}
@@ -162,7 +162,7 @@ const ExplorePackages = () => {
           ))}
         </div>
       </div>
-      <div className="max-w-6xl container mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-10 mb-8 mobile:px-4 mobile:mt-20 medium:px-6">
+      <div className="w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-10 mb-8 sm:mt-10 ">
         {filteredTrips.map((trip, index) => (
           <ExpeditionCard key={index} {...trip} />
         ))}

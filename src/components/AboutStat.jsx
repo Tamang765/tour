@@ -26,7 +26,7 @@ export default function StatsSection() {
 
   return (
     <div className="w-full mobile:px-4">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center mobile:grid-cols-1 mobile:gap-10">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-4 lg:grid-cols-4 justify-items-center sm:grid-cols-1 sm:gap-10">
         {stats.map((stat, index) => (
           <div
             key={index}
@@ -37,7 +37,7 @@ export default function StatsSection() {
                 <stat.icon className="w-8 h-8 text-gray-800 group-hover:text-orange-500" />
               </div>
             </div>
-            <h3 className="text-4xl mobile:text-xl font-bold mb-2">{stat.number}</h3>
+            <h3 className="text-4xl mobile:text-xl font-bold mb-2 md:text-2xl">{stat.number}</h3>
             <p className="text-gray-600 text-center mobile:text-black">{stat.label}</p>
           </div>
         ))}
@@ -66,7 +66,7 @@ const AboutFounder = () => {
         </h2>
 
         <p className="text-lg font-bold  py-3">THE RESPONSIBLE CLIMBERS</p>
-        <p className="text-gray-700 mt-4 mb-6 mobile:text-start ">
+        <p className="text-gray-700 mt-4 mb-6 text-justify mobile:text-start ">
           Ngodu Sherpa is a world-class and transformational expedition and
           adventure company with its corporate office based in Kathmandu, one of
           the most picturesque places in the world. We are a new start-up,

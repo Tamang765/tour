@@ -60,7 +60,7 @@ const Header = ({ projectSectionRef }) => {
   return (
     <div>
       {isNavVisible && (
-        <nav className={`fixed top-0 w-full flex justify-between items-center transition-all duration-1000 z-20 px-4 md:px-10 lg:px-[10rem] h-20 ${navColor}`}>
+        <nav className={`fixed top-0 w-full flex justify-between items-center transition-all duration-1000 z-20 px-[1rem]  lg:px-[5rem] md:px-[3rem] sm:px-[2rem] h-20 ${navColor}`}>
           <Link to={"/"}>
             <img
               src={navColor !== "#ffff" ? blackLogo : whiteLogo} // Switch logo based on background color

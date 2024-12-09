@@ -12,7 +12,7 @@ const TeamPage = () => {
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 medium:px-6">
+        <div className="w-full px-[1rem] sm:px-[2rem] lg:px-[5rem] md:px-[3rem] absolute inset-0 flex flex-col items-baseline justify-end mb-5 ">
           <div className=" text-white py-6 rounded-lg w-full">
             <h1 className="text-3xl md:text-4xl font-[1000] mb-2 tracking-wide">Our Team</h1>
             <p className="text-lg md:text-xl text-yellow-400 font-bold">our team</p>
@@ -20,7 +20,7 @@ const TeamPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto max-w-6xl py-12 text-justify medium:px-6 mobile:px-4">
+      <div className="w-full px-[1rem] sm:px-[2rem] lg:px-[5rem] md:px-[3rem] py-12 text-justify ">
         <p className="text-lg text-gray-700 leading-relaxed">
           At <span className="text-yellow-500 font-bold">Ngodu Sherpa</span>,
           our team brings together a combination of
@@ -51,7 +51,7 @@ const TeamPage = () => {
         </p>
       </div>
 
-      <div className="container mx-auto max-w-6xl py-8 mobile:px-4 medium:px-6">
+      <div className="w-full px-[1rem] sm:px-[2rem] lg:px-[5rem] md:px-[3rem] py-8 ">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           Visionary Board Of Directors
         </h2>

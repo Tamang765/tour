@@ -13,7 +13,7 @@ const AboutPage = () => {
 
       </div>
 
-      <div className="max-w-6xl mx-auto mobile:px-4 medium:px-6 py-12">
+      <div className="w-full lg:px-[5rem]  md:px-[3rem] sm:px-[2rem] px-[1rem]  py-12">
         <h1 className="text-black text-4xl font-[1000]">8K Expeditions</h1>
         <p className="text-yellow-500 text-lg font-bold mt-3 mb-5">About us </p>
         <p className="text-md text-black mb-1 text-justify">8K EXPEDITIONS is a world-class and transformational expedition and adventure company with its corporate office based in Kathmandu, one of the most picturesque places in the world.</p>

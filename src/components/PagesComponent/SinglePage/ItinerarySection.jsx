@@ -51,7 +51,7 @@ const ItinerarySection = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-6xl py-20">
+    <div className="w-full lg:px-[5rem]  md:px-[3rem] sm:px-[2rem] px-[1rem]  py-20">
       <div className="title">
         <h1 className="text-3xl text-gray-700 font-[1000] mb-4">Trip Top Itinerary</h1>
       </div>

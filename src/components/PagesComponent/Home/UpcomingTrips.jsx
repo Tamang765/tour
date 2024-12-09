@@ -107,7 +107,7 @@ const UpcomingTrips = () => (
       <div className="py-10 bg-gray-800">
         <HeadingComponent heading={"Upcoming"} section={"Trips"} more={""} />
       </div>
-      <div className="container mx-auto max-w-6xl grid grid-cols-1 medium:grid-cols-2   gap-6 mobile:gap-10 mobile:px-4 medium:px-6 mt-10 mobile:mt-10">
+      <div className="w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 sm:gap-10  mt-10 sm:mt-10">
         {trips.map((trip, index) => (
           <ExpeditionCard key={index} {...trip} />
           // <TripCard key={index} {...trip} />
@@ -155,7 +155,7 @@ export function ExpeditionCard({ location, days, title, detailsLink, bookLink, i
             </span>
           </a>
 
-          <button className="bg-navy-800 text-white px-8 py-3 rounded-full mobile:rounded-none text-sm font-semibold hover:bg-navy-900 transition-colors hover:text-orange-500">BOOK NOW</button>
+          <button className="bg-navy-800 text-white px-8 py-3 rounded-xl mobile:rounded-none text-sm font-semibold hover:bg-navy-900 transition-colors hover:text-orange-500">BOOK NOW</button>
         </div>
       </div>
     </div>

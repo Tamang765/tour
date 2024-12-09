@@ -5,10 +5,10 @@ const ContactUsPage = () => {
   return (
     <div>
       <div className="w-full">
-        <div className="relative w-full h-[80vh] ">
+        <div className="relative w-full h-[80vh] mobile:h-[80vh] ">
           <img src="https://8kexpeditions.com/uploaded_images/page/other-activities-23.jpg" alt="Other Activities" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/50"></div>
-          <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:px-4 medium:px-6">
+          <div className="w-full lg:px-[5rem]  md:px-[3rem] sm:px-[2rem] px-[1rem] absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:px-4 medium:px-6">
             <div className=" text-white py-6  rounded-lg w-full">
               <h1 className="text-4xl font-[1000] mb-4">Contact Us</h1>
               <p className="text-sm w-[30vw] mobile:w-[50vw]">Eight K Expeditions Pvt. Ltd. is dedicated to providing you the best service in the Travel and Tourism Industry. Our Customer Support is available 24/7 for any queries you may have. Just give us a call or leave us a text. We will respond right away.</p>
@@ -40,7 +40,7 @@ const ContactUsPage = () => {
       </div>
 
       <div className="bg-white">
-        <div className="container mx-auto max-w-6xl py-12 mobile:px-4 medium:px-6">
+        <div className="w-full lg:px-[5rem]  md:px-[3rem] sm:px-[2rem] px-[1rem] py-12 mobile:px-4 medium:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-3xl font-[1000] mb-6 text-gray-700">8K Expeditions</h2>

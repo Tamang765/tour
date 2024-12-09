@@ -50,7 +50,7 @@ const SingleTrekkingProductPage = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 medium:px-6 ">
+        <div className="w-full lg:px-[5rem]  md:px-[3rem] sm:px-[2rem] px-[1rem] absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 medium:px-6 ">
           <div className=" text-white py-6 rounded-lg w-full">
             <h1 className="text-3xl md:text-4xl font-[1000] mb-2 tracking-wide">Everest Region</h1>
             <p className="text-lg md:text-xl text-yellow-400 font-bold">6 Packages</p>
@@ -58,13 +58,13 @@ const SingleTrekkingProductPage = () => {
         </div>
       </div>
 
-      <div className=" mx-auto py-12 mobile:px-4  bg-gray-200 medium:px-6">
-        <p className="text-black text-md leading-relaxed max-w-6xl mx-auto text-justify">
+      <div className=" mx-auto py-12   bg-gray-200 medium:px-6">
+        <p className="text-black text-md leading-relaxed w-full lg:px-[5rem]  md:px-[3rem] sm:px-[2rem] px-[1rem] text-justify">
           <strong className="text-gray-900">Everest Region</strong> is a heaven for mountaineers and trekkers. With the everlasting beauty of giant snow-capped peaks to the admirable serenity of nature in the Sagarmatha National Park, Everest Region never disappoints anyone who steps into it. Blessed with natural, cultural, and topographical diversity as well, Everest Region is undoubtedly one of the best places on Earth.
         </p>
       </div>
 
-      <div className="container max-w-6xl mx-auto py-12 mobile:px-4 medium:px-6">
+      <div className="w-full lg:px-[5rem]  md:px-[3rem] sm:px-[2rem] px-[1rem] py-12 ">
         <h2 className="text-center text-2xl font-bold text-gray-800 mb-8">Everest Region Packages</h2>
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6">
           {packages.map((pkg, index) => (

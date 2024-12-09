@@ -77,7 +77,7 @@ const SliderSection = () => {
 
   return (
     <div className="bg-gray-800 py-10">
-      <div className="container mx-auto ">
+      <div className="">
         {/* Affiliations Section */}
         <div className="mb-12 relative">
           <h2 className="text-white text-2xl font-bold mb-6">Affiliations</h2>
@@ -98,10 +98,10 @@ const SliderSection = () => {
               </div>
             </div>
             {/* Prev and Next Buttons */}
-            <button onClick={() => handlePrev("affiliations")} className="absolute left-0 top-1/2 transform -translate-x-4 -translate-y-1/2 bg-yellow-500 text-black font-bold rounded-full w-10 h-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition mobile:hidden">
+            <button onClick={() => handlePrev("affiliations")} className=" hidden absolute left-0 top-1/2 transform -translate-x-4 -translate-y-1/2 bg-yellow-500 text-black font-bold rounded-full w-10 h-10 lg:flex items-center justify-center opacity-0 group-hover:opacity-100 transition mobile:hidden">
               ❮
             </button>
-            <button onClick={() => handleNext("affiliations")} className="absolute right-0 top-1/2 transform translate-x-4 -translate-y-1/2 bg-yellow-500 text-black font-bold rounded-full w-10 h-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition mobile:hidden">
+            <button onClick={() => handleNext("affiliations")} className=" hidden absolute right-0 top-1/2 transform translate-x-4 -translate-y-1/2 bg-yellow-500 text-black font-bold rounded-full w-10 h-10 lg:flex items-center justify-center opacity-0 group-hover:opacity-100 transition mobile:hidden">
               ❯
             </button>
           </div>
@@ -127,10 +127,10 @@ const SliderSection = () => {
               </div>
               {/* Prev and Next Buttons */}
             </div>
-            <button onClick={() => handlePrev("partners")} className="absolute left-0 top-1/2 transform -translate-x-4 -translate-y-1/2 bg-yellow-500 text-black font-bold rounded-full w-10 h-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition mobile:hidden">
+            <button onClick={() => handlePrev("partners")} className=" hidden absolute left-0 top-1/2 transform -translate-x-4 -translate-y-1/2 bg-yellow-500 text-black font-bold rounded-full w-10 h-10 lg:flex items-center justify-center opacity-0 group-hover:opacity-100 transition mobile:hidden">
               ❮
             </button>
-            <button onClick={() => handleNext("partners")} className="absolute right-0 top-1/2 transform translate-x-4 -translate-y-1/2 bg-yellow-500 text-black font-bold rounded-full w-10 h-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition mobile:hidden">
+            <button onClick={() => handleNext("partners")} className="hidden absolute right-0 top-1/2 transform translate-x-4 -translate-y-1/2 bg-yellow-500 text-black font-bold rounded-full w-10 h-10 lg:flex items-center justify-center opacity-0 group-hover:opacity-100 transition mobile:hidden">
               ❯
             </button>
           </div>

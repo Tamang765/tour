@@ -6,7 +6,7 @@ const CityTourPage = () => {
       <div className="relative w-full h-[50vh]">
         <img src="https://8kexpeditions.com/uploaded_images/page/other-activities-23.jpg" alt="Other Activities" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container mx-auto max-w-6xl absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 medium:px-6 ">
+        <div className="w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem] absolute inset-0 flex flex-col items-baseline justify-end mb-5 mobile:p-4 medium:px-6 ">
           <div className=" text-white py-6 rounded-lg w-full">
             <h1 className="text-4xl md:text-5xl font-bold mb-2">City Tour</h1>
             <p className="text-lg md:text-xl text-yellow-400">Package</p>
@@ -15,11 +15,11 @@ const CityTourPage = () => {
       </div>
 
       <div className=" py-20   bg-gray-100 mobile:px-4 medium:px-6 ">
-        <p className=" container mx-auto max-w-6xl text-black text-md leading-relaxed text-justify">City Tours are luxury tours that take you around cities with famous landmarks. Mostly done with a ride in the private jeep, city tours offer an extraordinary opportunity to explore the culture, traditions, attractions of the city. City Tours can be customized as per your availability of time and budget. We can plan attractive tours for you in major cities of Nepal, India, Bhutan, China, and other countries as well.</p>
+        <p className="w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem]l text-black text-md leading-relaxed text-justify">City Tours are luxury tours that take you around cities with famous landmarks. Mostly done with a ride in the private jeep, city tours offer an extraordinary opportunity to explore the culture, traditions, attractions of the city. City Tours can be customized as per your availability of time and budget. We can plan attractive tours for you in major cities of Nepal, India, Bhutan, China, and other countries as well.</p>
       </div>
 
       <div className="bg-white">
-        <div className=" container mx-auto max-w-6xl py-10 mobile:px-4 medium:px-6 ">
+        <div className=" w-full px-[1rem] lg:px-[5rem] md:px-[3rem] sm:px-[2rem] py-10 mobile:px-4 medium:px-6 ">
           <h2 className="text-3xl font-bold mb-8">City Tour Packages</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className=" h-fit bg-white  rounded-xl overflow-hidden group">
