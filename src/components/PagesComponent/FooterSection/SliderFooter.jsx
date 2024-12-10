@@ -92,7 +92,7 @@ const SliderSection = () => {
               >
                 {extendedAffiliations.map((src, index) => (
                   <div key={index} className="bg-white flex-shrink-0 flex items-center justify-center h-28 mobile:h-28 rounded-lg" style={{ width: `${slideWidthPercentage}%` }}>
-                    <img src={src} alt={`Affiliation ${index}`} className="w-[80%] h-[90%] aspect-square hover:scale-105 transition-transform duration-300" />
+                    <img src={src} alt={`Affiliation ${index}`} className="w-auto h-[90%] aspect-square hover:scale-105 transition-transform duration-300" />
                   </div>
                 ))}
               </div>
@@ -121,7 +121,7 @@ const SliderSection = () => {
               >
                 {extendedPartners.map((src, index) => (
                   <div key={index} className="bg-white flex-shrink-0 flex items-center justify-center h-28 mobile:h-28 rounded-lg" style={{ width: `${slideWidthPercentage}%` }}>
-                    <img src={src} alt={`Partner ${index}`} className="w-[80%] h-[90%] aspect-square hover:scale-105 transition-transform duration-300" />
+                    <img src={src} alt={`Partner ${index}`} className="w-auto h-[90%] aspect-square hover:scale-105 transition-transform duration-300" />
                   </div>
                 ))}
               </div>

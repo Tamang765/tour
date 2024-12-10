@@ -83,13 +83,13 @@ const SliderImage = () => {
 
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black/50 text-white p-4 rounded-full hover:bg-black/70 transition"
+          className="absolute top-1/2 w-12 h-12 rounded-full left-5 transform -translate-y-1/2 bg-black/50 text-white   hover:bg-black/70 transition"
         >
           ❮
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black/50 text-white p-4 rounded-full hover:bg-black/70 transition"
+          className="absolute top-1/2 w-12 h-12 rounded-full right-5 transform -translate-y-1/2 bg-black/50 text-white  hover:bg-black/70 transition"
         >
           ❯
         </button>

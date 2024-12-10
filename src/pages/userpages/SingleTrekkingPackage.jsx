@@ -12,7 +12,7 @@ const Sliderpage = () => {
       <div className="relative  bg-white">
         <div className="border-b mobile:fixed mobile:bottom-0 mobile:left-0 mobile:right-0 mobile:bg-white mobile:border-t-2 mobile:z-[100]">
           <div className="w-full lg:px-[5rem]  md:px-[3rem] sm:px-[2rem] px-[1rem] flex flex-col lg:flex-row justify-between items-center ">
-            <div className="lg:flex md:flex  justify-center space-x-6 text-gray-800 text-md lg:text-base font-semibold  md:py-5 md:flex-row hidden sm:fixed sm:bottom-0 sm:left-0 right-0 sm:bg-white py-5 px-[1rem] border-t-2 z-[200] ">
+            <div className="lg:relative lg:z-0 lg:flex md:flex  justify-center space-x-6 text-gray-800 text-md lg:text-base font-semibold  md:py-5 md:flex-row hidden sm:fixed sm:bottom-0 sm:left-0 right-0 sm:bg-white py-5 px-[1rem] border-t-2 z-[200] ">
               <a href="#description" className="hover:text-black transition">
                 Description
               </a>
